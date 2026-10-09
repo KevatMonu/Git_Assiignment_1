@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>GitHub — Build Together</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Remix Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.css"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+
+    <!-- Background Effects -->
+    <div class="background-glow glow-one"></div>
+    <div class="background-glow glow-two"></div>
+
+    <!-- Navbar -->
+    <header class="navbar">
+
+        <a href="#home" class="logo">
+            <span class="logo-icon">
+                <i class="ri-github-fill"></i>
+            </span>
+
+            <span>Git<span class="logo-accent">Hub</span></span>
+        </a>
+
+        <nav class="nav-links" id="navLinks">
+            <a href="#home" class="nav-link active">Home</a>
+            <a href="#features" class="nav-link">Features</a>
+            <a href="#workflow" class="nav-link">Workflow</a>
+            <a href="#about" class="nav-link">About</a>
+        </nav>
+
+        <a href="https://github.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="nav-button">
+            Explore GitHub
+            <i class="ri-arrow-up-right-line"></i>
+        </a>
+
+        <button class="menu-toggle"
+            id="menuToggle"
+            aria-label="Toggle navigation"
+            aria-expanded="false">
+            <i class="ri-menu-3-line"></i>
+        </button>
+
+    </header>
+
+
+    <!-- Hero Section -->
+    <main>
+
+        <section class="hero section-container" id="home">
+
+            <div class="hero-content reveal">
+
+                <div class="announcement">
+                    <span class="announcement-dot"></span>
+                    YOUR JOURNEY INTO VERSION CONTROL
+
+                    <i class="ri-arrow-right-line"></i>
+                </div>
+
+                <h1>
+                    Code smarter.<br>
+                    Build <span class="gradient-text">together.</span>
+                </h1>
+
+                <p class="hero-description">
+                    Discover the power of Git and GitHub.
+                    Track changes, collaborate with developers,
+                    and turn your ideas into something extraordinary.
+                </p>
+
+                <div class="hero-actions">
+
+                    <a href="#features" class="button-primary">
+                        Explore Features
+                        <i class="ri-arrow-right-up-line"></i>
+                    </a>
+
+                    <a href="https://git-scm.com"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="button-secondary">
+
+                        <i class="ri-git-branch-line"></i>
+                        Learn Git
+                    </a>
+
+                </div>
+
+                <div class="hero-stats">
+
+                    <div class="stat">
+                        <div class="stat-icon">
+                            <i class="ri-git-branch-line"></i>
+                        </div>
+
+                        <div>
+                            <h3>Version</h3>
+                            <p>Control</p>
+                        </div>
+                    </div>
+
+                    <div class="stat-divider"></div>
+
+                    <div class="stat">
+                        <div class="stat-icon">
+                            <i class="ri-team-line"></i>
+                        </div>
+
+                        <div>
+                            <h3>Team</h3>
+                            <p>Collaboration</p>
+                        </div>
+                    </div>
+
+                    <div class="stat-divider"></div>
+
+                    <div class="stat">
+                        <div class="stat-icon">
+                            <i class="ri-cloud-line"></i>
+                        </div>
+
+                        <div>
+                            <h3>Cloud</h3>
+                            <p>Repositories</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Terminal Card -->
+            <div class="hero-visual reveal">
+
+                <div class="terminal-glow"></div>
+
+                <div class="terminal-card">
+
+                    <div class="terminal-header">
+
+                        <div class="window-controls">
+                            <span class="control red"></span>
+                            <span class="control yellow"></span>
+                            <span class="control green"></span>
+                        </div>
+
+                        <div class="terminal-title">
+                            <i class="ri-terminal-box-line"></i>
+                            developer@github ~
+                        </div>
+
+                        <i class="ri-more-2-fill terminal-menu"></i>
+
+                    </div>
+
+                    <div class="terminal-body">
+
+                        <div class="terminal-label">
+                            <span class="terminal-status"></span>
+                            INITIALIZE YOUR PROJECT
+                        </div>
+
+                        <div class="terminal-command">
+                            <span class="line-number">01</span>
+                            <span class="prompt">$</span>
+                            <span class="command">git init</span>
+                        </div>
+
+                        <p class="command-description">
+                            Initialize a Git repository
+                        </p>
+
+                        <div class="terminal-command">
+                            <span class="line-number">02</span>
+                            <span class="prompt">$</span>
+                            <span class="command">git add .</span>
+                        </div>
+
+                        <p class="command-description">
+                            Stage your changes
+                        </p>
+
+                        <div class="terminal-command">
+                            <span class="line-number">03</span>
+                            <span class="prompt">$</span>
+                            <span class="command">git commit -m "init"</span>
+                        </div>
+
+                        <p class="command-description">
+                            Save a snapshot of your project
+                        </p>
+
+                        <div class="terminal-command">
+                            <span class="line-number">04</span>
+                            <span class="prompt">$</span>
+                            <span class="command">git push origin main</span>
+                        </div>
+
+                        <p class="command-description">
+                            Upload changes to GitHub
+                        </p>
+
+                        <div class="terminal-success">
+                            <i class="ri-checkbox-circle-fill"></i>
+
+                            <div>
+                                <strong>Deployment ready!</strong>
+                                <span>Your workflow starts here.</span>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="terminal-footer">
+                        <span>
+                            <i class="ri-git-branch-line"></i>
+                            main
+                        </span>
+
+                        <span>
+                            <i class="ri-shield-check-line"></i>
+                            Git workflow
+                        </span>
+                    </div>
+
+                </div>
+
+                <!-- Floating Cards -->
+                <div class="floating-card floating-top">
+                    <div class="floating-icon purple-icon">
+                        <i class="ri-git-branch-line"></i>
+                    </div>
+
+                    <div>
+                        <strong>New branch</strong>
+                        <p>feature/design</p>
+                    </div>
+                </div>
+
+                <div class="floating-card floating-bottom">
+                    <div class="floating-icon green-icon">
+                        <i class="ri-check-line"></i>
+                    </div>
+
+                    <div>
+                        <strong>Changes saved</strong>
+                        <p>Commit successful</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Divider -->
+        <div class="section-divider"></div>
+
+
+        <!-- Features Section -->
+        <section class="features section-container" id="features">
+
+            <div class="section-heading reveal">
+
+                <span class="section-tag">
+                    <span></span>
+                    POWERFUL TOOLS
+                </span>
+
+                <h2>
+                    Everything you need to<br>
+                    <span class="gradient-text">build better software.</span>
+                </h2>
+
+                <p>
+                    Two powerful tools. One seamless development workflow.
+                </p>
+
+            </div>
+
+
+            <div class="feature-grid">
+
+                <article class="feature-card reveal">
+
+                    <div class="feature-card-top">
+                        <div class="feature-icon purple-bg">
+                            <i class="ri-history-line"></i>
+                        </div>
+
+                        <span class="card-number">01</span>
+                    </div>
+
+                    <h3>Version Control</h3>
+
+                    <p>
+                        Track every change in your code, maintain a
+                        project history, and restore previous versions
+                        whenever needed.
+                    </p>
+
+                    <a href="https://git-scm.com"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="feature-link">
+
+                        Explore Git
+                        <i class="ri-arrow-right-up-line"></i>
+                    </a>
+
+                </article>
+
+
+                <article class="feature-card reveal">
+
+                    <div class="feature-card-top">
+                        <div class="feature-icon blue-bg">
+                            <i class="ri-git-branch-line"></i>
+                        </div>
+
+                        <span class="card-number">02</span>
+                    </div>
+
+                    <h3>Branching & Merging</h3>
+
+                    <p>
+                        Develop new features independently, experiment
+                        safely, and merge your changes into the main
+                        project when ready.
+                    </p>
+
+                    <a href="https://git-scm.com/book/en/v2/Git-Branching-Branches-in-a-Nutshell"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="feature-link">
+
+                        Explore Branches
+                        <i class="ri-arrow-right-up-line"></i>
+                    </a>
+
+                </article>
+
+
+                <article class="feature-card reveal">
+
+                    <div class="feature-card-top">
+                        <div class="feature-icon green-bg">
+                            <i class="ri-team-line"></i>
+                        </div>
+
+                        <span class="card-number">03</span>
+                    </div>
+
+                    <h3>Team Collaboration</h3>
+
+                    <p>
+                        Share repositories, review code through pull
+                        requests, and collaborate with developers
+                        around the world.
+                    </p>
+
+                    <a href="https://docs.github.com"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="feature-link">
+
+                        Explore GitHub
+                        <i class="ri-arrow-right-up-line"></i>
+                    </a>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- Workflow Section -->
+        <section class="workflow section-container" id="workflow">
+
+            <div class="workflow-content reveal">
+
+                <span class="section-tag">
+                    <span></span>
+                    SIMPLE WORKFLOW
+                </span>
+
+                <h2>
+                    From local code to<br>
+                    <span class="gradient-text">global collaboration.</span>
+                </h2>
+
+                <p>
+                    Understand how Git and GitHub work together
+                    to manage your development process.
+                </p>
+
+                <a href="https://docs.github.com/en/get-started"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="button-primary">
+
+                    Start Learning
+                    <i class="ri-arrow-right-line"></i>
+                </a>
+
+            </div>
+
+
+            <div class="workflow-steps reveal">
+
+                <div class="workflow-step">
+
+                    <div class="step-icon">
+                        <i class="ri-code-s-slash-line"></i>
+                    </div>
+
+                    <div class="step-content">
+                        <span>STEP 01</span>
+                        <h3>Write Code</h3>
+                        <p>Create and modify files on your computer.</p>
+                    </div>
+
+                </div>
+
+                <div class="step-connector"></div>
+
+                <div class="workflow-step">
+
+                    <div class="step-icon">
+                        <i class="ri-git-commit-line"></i>
+                    </div>
+
+                    <div class="step-content">
+                        <span>STEP 02</span>
+                        <h3>Commit Changes</h3>
+                        <p>Record a snapshot of your project using Git.</p>
+                    </div>
+
+                </div>
+
+                <div class="step-connector"></div>
+
+                <div class="workflow-step">
+
+                    <div class="step-icon">
+                        <i class="ri-cloud-line"></i>
+                    </div>
+
+                    <div class="step-content">
+                        <span>STEP 03</span>
+                        <h3>Push to GitHub</h3>
+                        <p>Upload your commits to a remote repository.</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- CTA Section -->
+        <section class="cta section-container reveal" id="about">
+
+            <div class="cta-glow"></div>
+
+            <div class="cta-content">
+
+                <span class="section-tag">
+                    YOUR NEXT PROJECT STARTS HERE
+                </span>
+
+                <h2>
+                    Great ideas deserve<br>
+                    <span class="gradient-text">great collaboration.</span>
+                </h2>
+
+                <p>
+                    Start learning Git and GitHub today.
+                    Build projects, collaborate with others, and
+                    grow as a developer.
+                </p>
+
+                <a href="https://github.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="button-primary">
+
+                    Explore GitHub
+                    <i class="ri-arrow-right-up-line"></i>
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+
+        <a href="#home" class="logo footer-logo">
+            <span class="logo-icon">
+                <i class="ri-github-fill"></i>
+            </span>
+
+            <span>Git<span class="logo-accent">Hub</span></span>
+        </a>
+
+        <p>
+            Designed to make version control easier to understand.
+        </p>
+
+        <a href="#home" class="back-to-top" aria-label="Back to top">
+            <i class="ri-arrow-up-line"></i>
+        </a>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
